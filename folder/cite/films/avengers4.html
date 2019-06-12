@@ -59,6 +59,16 @@
                 sales.innerHTML = 'После событий Войны бесконечности, половина вселенной уничтожена. Спустя три недели призванная на помощь Кэрол Дэнверс спасает дрейфующих в космосе Небулу и Тони Старка и перемещает их на Землю. С ними объединяются Чёрная вдова, Халк, Стив Роджерс, Ракета, Тор и Воитель. Команда начинает разрабатывать план спасения, но оказалось... <input type="button" value="Развернуть" onclick="buy()" />';
                 }
                 </script>
+                <div id="sales">Купи меня! <input type="button" value="Купить" onclick="buy()" /></div>
+<script>
+var sales_div = document.getElementById("sales");
+function buy(){
+sales.innerHTML = 'Спасибо за покупку! <input type="button" value="Отменить покупку" onclick="cancel()" />';
+}
+function cancel(){
+sales.innerHTML = 'Купи меня! <input type="button" value="Купить" onclick="buy()" />';
+}
+</script>
     </main>
             <img id="Aven2" src="../../photo/Мстители4.jpg">
             <footer>
